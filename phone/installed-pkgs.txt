@@ -1,6 +1,5 @@
 openssh
 stow
-termux-setup-storage
 neovim
 fzf
 lf
