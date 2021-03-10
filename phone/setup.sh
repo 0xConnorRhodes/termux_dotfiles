@@ -19,4 +19,4 @@ echo "y" | termux-setup-storage
 echo "==STOWING CONFIGS=="
 rm $HOME/../usr/etc/bash.bashrc
 cd $HOME/termux_dotfiles/phone/stow
-stow -t /data/data/com.termux/files * 2>&1 | grep -A 2 -E "^WARNING"
+stow -t /data/data/com.termux/files *
