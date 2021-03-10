@@ -1,4 +1,4 @@
 # Termux dotfiles
-Dotfiles for my termux linux environment on my Android devices
+Dotfiles for my Termux Linux environment on my Android devices
 
 Clone the repo and run setup.sh to deploy.
