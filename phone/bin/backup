@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $HOME/termux_dotfiles
+
+git pull
+git add .
+git commit -m "backup autocommit"
+git push

@@ -1,9 +1,7 @@
 #!/bin/sh
 
-# manually install openssh
-
 # make sure we're in the right directory and up-to-date
-cd ~
+cd $HOME
 pkg upgrade
 
 # set up storage
@@ -12,10 +10,8 @@ mkdir storage
 echo "y" | termux-setup-storage
 
 # install all programs
-xargs -a storage/shared/sync/dox/configs/phone/installed-pkgs.txt pkg install
+xargs -a $HOME/termux_dotfiles/phone/installed-pkgs.txt pkg install
 
-# cp restow
-cp storage/shared/sync/dox/configs/phone/stow/bin/home/restow .
-rm ../usr/etc/bash.bashrc
-./restow
-rm restow
+# stow dotfiles
+rm $HOME/../usr/etc/bash.bashrc
+stow -t /data/data/com.termux/files * 2>&1 | grep -A 2 -E "^WARNING"
