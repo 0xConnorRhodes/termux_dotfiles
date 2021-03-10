@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /data/data/com.termux/files/home/storage/shared/sync/dox/configs/phone/stow
+stow -R -t /data/data/com.termux/files * 2>&1 | grep -A 2 -E "^WARNING"
