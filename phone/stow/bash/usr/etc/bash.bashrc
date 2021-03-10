@@ -1,3 +1,4 @@
+#!/bin/bash
 # MAKE SURE TO MANUALLY BACKUP THIS FILE
 
 # Command history tweaks:
@@ -18,7 +19,7 @@ export PATH="$PATH:$HOME/termux_dotfiles/phone/bin"
 
 
 # autostarts
-sshd & #autostarts ssh
+sshd 2>&1 #autostarts ssh
 
 # aliases
 alias v=nvim
