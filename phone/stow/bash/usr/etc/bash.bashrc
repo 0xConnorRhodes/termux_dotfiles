@@ -14,7 +14,7 @@
 shopt -s histappend
 shopt -s histverify
 export HISTCONTROL=ignoreboth
-export PATH="$PATH:$HOME/termux_dotfiles/bin"
+export PATH="$PATH:$HOME/termux_dotfiles/phone/bin"
 
 
 # autostarts
